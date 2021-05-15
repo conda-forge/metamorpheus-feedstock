@@ -9,14 +9,14 @@ source:
   sha256: 28449a89a3bb67ae78d2916bc5a82f7c8ff492de5d47d8d74f71ca9d0d8d1d67
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
     - {{ compiler('c') }}
     - sysroot_linux-64 2.17  # [linux64]
   run:
-    - dotnet =3.1
+    - dotnet-runtime <3.1.19
 
 test:
   commands:
