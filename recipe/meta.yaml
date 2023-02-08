@@ -1,4 +1,4 @@
-{% set version = "0.0.320" %}
+{% set version = "1.0.0" %}
 
 package:
   name: metamorpheus
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/smith-chem-wisc/MetaMorpheus/releases/download/{{ version }}/MetaMorpheus_CommandLine.zip
-  sha256: 9c76babe4e92c8003dd17eb9a3cd80b1c26658dcb175edcc05808cb0e3a7ea37 
+  sha256: 07d9da0d14e02cd6fdcfd3da61d4027d0e32f5ebf6653e7d51932c77fd0651d1
 
 build:
   skip: true  # [win]
@@ -17,7 +17,7 @@ requirements:
     - {{ compiler('c') }}
     - sysroot_linux-64 2.17  # [linux64]
   run:
-    - dotnet-runtime =5.0
+    - dotnet-runtime =6.0
 
 test:
   commands:
