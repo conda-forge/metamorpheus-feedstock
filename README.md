@@ -181,4 +181,5 @@ Feedstock Maintainers
 =====================
 
 * [@acesnik](https://github.com/acesnik/)
+* [@trishorts](https://github.com/trishorts/)
 
