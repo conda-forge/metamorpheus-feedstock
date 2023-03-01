@@ -10,7 +10,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1 
 
 requirements:
   build:
@@ -34,3 +34,4 @@ about:
 extra:
   recipe-maintainers:
     - acesnik
+    - trishorts
