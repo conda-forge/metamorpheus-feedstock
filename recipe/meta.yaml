@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/smith-chem-wisc/MetaMorpheus/releases/download/{{ version }}/MetaMorpheus_CommandLine.zip
-  sha256: cad92b262ca5508c4d8a04e0d342f1260b85d354cd53152db9d7f6cc1e5a0490
+  sha256: 3da169aad854c4fee10de61f224a9faa43806eeebac0760f8a42610b4068d112
 
 build:
   number: 0
