@@ -17,7 +17,7 @@ requirements:
     - {{ stdlib("c") }}
 
   run:
-    - dotnet-runtime = 8.0
+    - dotnet-runtime=8.0
 
 test:
   commands:
