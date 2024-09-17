@@ -1,7 +1,7 @@
 c_stdlib:
 - sysroot                    # [linux]
 c_stdlib_version: 
-- 2.12
+- '2.12'
 cdt_name:
 - cos7
 channel_sources:
