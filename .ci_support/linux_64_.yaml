@@ -1,7 +1,7 @@
-c_compiler:
-- gcc
-c_compiler_version:
-- '12'
+c_stdlib:
+- sysroot                    # [linux]
+c_stdlib_version: 
+- 2.12
 cdt_name:
 - cos7
 channel_sources:
