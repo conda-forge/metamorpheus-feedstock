@@ -9,7 +9,7 @@ source:
   sha256: a782e95407a93b2912a429c92e0e3dc0aacece1c8192e6b6ac72a98b27d43913 
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -17,7 +17,7 @@ requirements:
     - {{ stdlib("c") }}
 
   run:
-    - dotnet-runtime =8.0
+    - dotnet-runtime =8.0.6
 
 test:
   commands:
