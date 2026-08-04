@@ -2,3 +2,12 @@ conda_forge_output_validation: true
 github:
   branch_name: main
   tooling_branch_name: main
+
+# MetaMorpheus ships prebuilt .NET assemblies; recipe/build.sh compiles nothing and only copies
+# files plus a launcher, so these platforms are cross-rendered from their x86_64 counterparts.
+# Neither osx-arm64 nor linux-aarch64 is emitted by a plain rerender, so they are requested here.
+# win_arm64 is deliberately omitted: conda-forge has no dotnet-runtime 8.0.6 for it (only 8.0.29),
+# so enabling it would require relaxing the `=8.0.6` run pin. See the PR description.
+build_platform:
+  osx_arm64: osx_64
+  linux_aarch64: linux_64
