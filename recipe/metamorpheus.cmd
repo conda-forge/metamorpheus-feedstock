@@ -1,1 +1,1 @@
-@"%CONDA_PREFIX%\dotnet\tools\metamorpheus\CMD.exe" %*
+@"%DOTNET_ROOT%\dotnet.exe" "%DOTNET_TOOLS%\metamorpheus\CMD.dll" %*

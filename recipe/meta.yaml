@@ -1,4 +1,4 @@
-{% set version = "1.1.7" %}
+{% set version = "1.1.8" %}
 
 package:
   name: metamorpheus
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/smith-chem-wisc/MetaMorpheus/releases/download/{{ version }}/MetaMorpheus_CommandLine.zip
-  sha256: 36e2ca5c3c747a3226c30ac1c1882d9704749f4747815cb88b9c6682abbd4c90
+  sha256: 45475448935e91e27008c93e286aa8d846752dd62b218f8b8b573d4e882c4a7a
 
 build:
   number: 0
@@ -17,7 +17,9 @@ requirements:
     - {{ stdlib("c") }}
 
   run:
-    - dotnet-runtime =8.0.6
+    # 1.1.8 is a net10.0 build: CMD.runtimeconfig.json asks for Microsoft.NETCore.App
+    # 10.0.0, so the previous `=8.0.6` pin would install and then fail to start.
+    - dotnet-runtime >=10.0,<11.0a0
 
 test:
   commands:
