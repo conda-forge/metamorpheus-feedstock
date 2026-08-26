@@ -13,3 +13,7 @@ build_platform:
   osx_arm64: osx_64
   linux_aarch64: linux_64
   win_arm64: win_64
+
+# linux-aarch64 is tested under emulation; an x86_64 macOS or Windows builder cannot execute an
+# arm64 binary at all, so those two are built but not tested. Same setting dotnet-feedstock uses.
+test: native_and_emulated
