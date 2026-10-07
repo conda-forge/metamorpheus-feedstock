@@ -1,4 +1,4 @@
-{% set version = "1.1.11" %}
+{% set version = "1.1.12" %}
 
 package:
   name: metamorpheus
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/smith-chem-wisc/MetaMorpheus/releases/download/{{ version }}/MetaMorpheus_CommandLine.zip
-  sha256: 4607e9f304114056d38970510a695fe89409048a11aad17ee94398963f92de46
+  sha256: 8e9fb198291ff66872e760f46fa4036cb5107ad938fb4a4e8c5c2c10aff0c352
 
 build:
   number: 0
